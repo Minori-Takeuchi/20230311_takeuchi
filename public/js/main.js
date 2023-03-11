@@ -47,7 +47,7 @@ window.onload = function () {
   
     if (!zip11Input.value.trim()) {
       zip11ErrorMessage.textContent = '郵便番号を入力してください';
-    } else if (!/\d{3}-?\d{4}/.test(zip11Input.value.trim())) {
+    } else if (!/\d{3}-\d{4}/.test(zip11Input.value.trim())) {
       zip11ErrorMessage.textContent = 'ハイフンを含む郵便番号形式で入力してください';
     }  else {
       zip11ErrorMessage.textContent = '';
